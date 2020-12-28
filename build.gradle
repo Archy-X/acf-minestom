@@ -19,7 +19,7 @@ repositories {
 
 dependencies {
     compileOnly 'com.github.Minestom:Minestom:32b8d83ac9'
-    implementation 'co.aikar:acf-core:0.5.0-SNAPSHOT'
+    compile 'co.aikar:acf-core:0.5.0-SNAPSHOT'
 }
 
 test {
