@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'com.github.Minestom:Minestom:f77ec96f25'
+    compileOnly 'com.github.Minestom:Minestom:32b8d83ac9'
     compile 'co.aikar:acf-core:0.5.0-SNAPSHOT'
 }
 
