@@ -66,18 +66,6 @@ Add the dependency
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version>
-            <configuration>
-                <source>11</source>
-                <target>11</target>
-                <compilerArgs>
-                    <arg>-parameters</arg>
-                </compilerArgs>
-            </configuration>
-        </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-shade-plugin</artifactId>
             <version>3.1.1</version>
             <configuration>
@@ -106,5 +94,12 @@ Add the dependency
 </build>
 ```
 Shade the dependency and relocate
+```
+<compilerArgs>
+    <arg>-parameters</arg>
+</compilerArgs>
+```
+You must add compiler args to get proper argument names
+
 
 
