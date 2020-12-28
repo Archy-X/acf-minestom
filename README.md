@@ -95,11 +95,20 @@ Add the dependency
 ```
 Shade the dependency and relocate
 ```
-<compilerArgs>
-    <arg>-parameters</arg>
-</compilerArgs>
+<plugin>
+    <version>3.7.0</version>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <configuration>
+        <source>[JAVA VERSION]</source>
+        <target>[JAVA VERSION]</target>
+        <compilerArgs>
+            <arg>-parameters</arg>
+        </compilerArgs>
+    </configuration>
+</plugin>
 ```
-You must add compiler args to get proper argument names
+You must enable -parameters on compiler plugin get proper argument names
 
 
 
