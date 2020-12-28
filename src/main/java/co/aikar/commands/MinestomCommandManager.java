@@ -31,6 +31,7 @@ public class MinestomCommandManager extends CommandManager<
         this.formatters.put(MessageType.SYNTAX, new MinestomMessageFormatter(ChatColor.YELLOW, ChatColor.BRIGHT_GREEN, ChatColor.WHITE));
         this.formatters.put(MessageType.INFO, new MinestomMessageFormatter(ChatColor.BLUE, ChatColor.DARK_GREEN, ChatColor.BRIGHT_GREEN));
         this.formatters.put(MessageType.HELP, new MinestomMessageFormatter(ChatColor.CYAN, ChatColor.BRIGHT_GREEN, ChatColor.YELLOW));
+        getLocales();
     }
 
     @Override
